@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.d-none{
+    display: none;
+}
+
+.player-panel{
+    display: flex;
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+.player-panel img{
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+}
+
+.player-panel div{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.player-inaktive{
+    opacity: 0.15;
+}
+
+/* ____________________________________________________________________Lines_____________ */
+.line{
+    height: 10px;
+    width: 280px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 212px;
+    transition: transform 225ms ease-in-out;
+    z-index: 1;
+}
+
+
+/* ____________________________________________________________________Table Design______ */
+
+tr {
+    width: 390px;
+    height: 130px;
+}
+
+td {
+    position: relative;
+    width: 130px;
+    border: 5px solid black;
+    cursor: pointer;
+}
+
+td:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+tr:first-child td {
+    border-top: 0;
+}
+
+tr:last-child td {
+    border-bottom: 0;
+}
+
+tr td:first-child {
+    border-left: 0;
+}
+
+tr td:last-child {
+    border-right: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/* ________________________________________________________________________________________ */
+
+.shape {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 25px;
+    left: 25px;
+}
+
+.game-over{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    animation: zoomIn 3500ms ease-in-out;
+}
+
+@keyframes zoomIn {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.btn-restart{
+    position: absolute;
+    background-color: #1C0B7F;
+    border: 1px white solid;
+    width: 300px;
+    height: 100px;
+    z-index: 11;
+    font-size: 50px;
+    color: white;
+    bottom: 22px;
+    cursor: pointer;
+    animation: zoomIn 3500ms ease-in-out;
+}
+
+.restart-gamescreen{
+    position: absolute;
+    bottom: 5px;
+    border: 5px solid black;
+    background-color: none;
+    border-radius: 45%;
+    padding: 8px;
+    cursor: pointer;
+}
