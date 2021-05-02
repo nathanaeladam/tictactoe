@@ -36,12 +36,18 @@ body {
 }
 
 /* ____________________________________________________________________Lines_____________ */
+.line-container{
+    position: absolute;
+    top: 151px;
+    width: 405px;
+    height: 390px;
+}
+
 .line{
     height: 10px;
     width: 280px;
     background-color: rgba(0,0,0,0.5);
-    position: absolute;
-    top: 212px;
+    position: relative;
     transition: transform 225ms ease-in-out;
     z-index: 1;
 }
