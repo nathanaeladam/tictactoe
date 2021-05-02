@@ -1,2 +1,2 @@
 # tictactoe
-this is a example from nathanael adam
+this is a example code from nathanael adam
