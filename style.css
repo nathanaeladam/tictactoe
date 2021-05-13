@@ -4,7 +4,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -14,6 +13,8 @@ body {
 
 .player-panel{
     display: flex;
+    position: absolute;
+    top: 30px;
     font-size: 40px;
     margin-bottom: 32px;
 }
@@ -36,22 +37,21 @@ body {
 }
 
 /* ____________________________________________________________________Lines_____________ */
-.line-container{
-    position: absolute;
-    top: 151px;
-    width: 405px;
-    height: 390px;
-}
 
 .line{
     height: 10px;
     width: 280px;
     background-color: rgba(0,0,0,0.5);
-    position: relative;
+    position: absolute;
     transition: transform 225ms ease-in-out;
     z-index: 1;
 }
 
+.line-container{
+    height: 390px;
+    position: absolute;
+    width: 406px;
+}
 
 /* ____________________________________________________________________Table Design______ */
 
